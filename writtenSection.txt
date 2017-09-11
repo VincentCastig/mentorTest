@@ -1,28 +1,54 @@
 Answer each question in a written format
 
 1. What does semantic HTML mean?
+    HTML that is clearly defined. EX: <table> is a clearly defined html element. 
 
 2. What is the box model?
+    It's a css model of how all the elements are laid out. Content in the middle then comes padding, border, and margin. 
 
 3. What is the difference between IDs and Classes?
+    Both are common ways to refer to elements. IDs are more specific and are used less frequently.
 
 4. What does the z-index do?
+    Z-index manualy positions an element behind or in front of other elements. z-index -1 brings it back. z-index +1 brings element forward.
 
 5. Summarize what the keyword 'this' is used for?
+    This refers to the object its inside of. This could refer to a function since a function is an object. 
 
 6. What is a callback?
+    A function which is called back to another function.
 
 7. What is a closure?
+    An inner function that has access to the outer function's variables.
 
 8. How does prototype work?
+    The prototype is a built-in or inherited object that is contained inside another object. It is used to define methods and properties inside an object. 
 
 9. What is MVC?
+    Model View Controller. Controller manipulates the model. Model updates the view. View is what is seen by the user.
 
 10. What is the component lifecycle?
+    Mounting: 
+        constructor(),
+        componentWillMount(),
+        render(),
+        componentDidMount(),
+    Updating:
+        componentWillReceiveProps(),
+        shouldComponentUpdate(),
+        componentWillUpdate(),
+        render(),
+        componentDidUpdate(), 
+    Unmounting:
+        componentWillUnmount()
 
 11. What is REST?
+    Representaional state transfer: manages state information. 
 
 12. Name three ways of getting data from the URL using express
+    req.body
+    req.params
+    req.query
 
 create table users (
 id serial,
@@ -32,10 +58,13 @@ email varchar(255)
 
 12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
 
--Get all users:
+-Get all users: SELECT * FROM users
 
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+    INSERT INTO users (name, email) VALUES ('your name', 'fake@fake.com');
 
 -Update the newly created user's name to 'Bobby Boy':
+    UPDATE users SET name = 'Bobby Boy' and email = 'fake@fake.com';
 
 -Delete the newly updated user:
+    DELETE users WHERE name = 'Bobby Boy'
