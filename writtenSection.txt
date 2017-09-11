@@ -43,7 +43,7 @@ Answer each question in a written format
         componentWillUnmount()
 
 11. What is REST?
-    Representaional state transfer: manages state information. 
+    Representaional state transfer: Manages state information and is primarly used to access named resources via a single consistant interface. 
 
 12. Name three ways of getting data from the URL using express
     req.body
